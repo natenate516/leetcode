@@ -1,9 +1,7 @@
 class Solution(object):
     def isPalindrome(self, x):
-        if x < 0:
-            return False
-        reverse = int(str(x)[::-1])
-        return reverse == x
+        reverse = str(x)[::-1]
+        return reverse == str(x)
 
 
 
