@@ -9,7 +9,9 @@ class Solution:
         
         dif = (aCount - bCount) / 2
 
+        aliceSet = set(aliceSizes)
         for candy in bobSizes:
-            if dif + candy in aliceSizes:
+            if dif + candy in aliceSet:
                 return [dif + candy, candy]
+        return -1
         
